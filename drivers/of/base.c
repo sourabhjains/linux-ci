@@ -89,6 +89,7 @@ static bool __of_node_is_type(const struct device_node *np, const char *type)
 
 #define EXCLUDED_DEFAULT_CELLS_PLATFORMS ( \
 	IS_ENABLED(CONFIG_SPARC) \
+	|| IS_ENABLED(CONFIG_PPC_PMAC) \
 )
 
 int of_bus_n_addr_cells(struct device_node *np)
